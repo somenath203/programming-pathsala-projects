@@ -6,7 +6,7 @@ This is the repository of Programming Pathsala Projects
 
 Postman Documentation of the Food Delivery API Swiggy: https://documenter.getpostman.com/view/14623339/2s93zFXKXo
 
-## Todo App
+## Todo App API
 
 Postman Documentation of the Todo App: https://documenter.getpostman.com/view/14623339/2s946cgEdG
 
