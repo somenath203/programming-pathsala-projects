@@ -9,7 +9,7 @@ const registerUser = async (req, res) => {
 
     try {
 
-        const { fullName, email, phoneNumber, password } = req.body;
+        const { fullName, email, phoneNumber, password, address } = req.body;
 
         const isUserAlreadyExist = await User.findOne({ email: email });
 
@@ -29,6 +29,7 @@ const registerUser = async (req, res) => {
             fullName: fullName,
             email: email,
             phoneNumber: phoneNumber,
+            address: address,
             password: hashedPassword
         });
 
@@ -163,7 +164,7 @@ const getAllOrdersGivenByUser = async (req, res) => {
 
         res.status(200).send({
             success: true,
-            message: 'all orders given by you nd all the restuarant from where you ate till now has been fetched successfully',
+            message: 'all orders given by you and all the restuarant from where you ate till now has been fetched successfully',
             orders: allOrders
         });
         

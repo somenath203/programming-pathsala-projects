@@ -42,7 +42,7 @@ const takeOrder = async (req, res) => {
 
         res.status(200).send({
             success: true,
-            message: `Your order is created successfully and your order-ID is ${createOrder._id}. You will receive your order soon. Stay tuned.`
+            message: `Your order is created successfully and your order-ID is ${createOrder._id}. You will receive your order soon in the address: '${user.address}'. Stay tuned.`
         });
         
     } catch (error) {
